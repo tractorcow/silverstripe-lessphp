@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs
+END
+import.less
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/import.less
+END
+mixin_functions.less
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/mixin_functions.less
+END
+media.less
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/media.less
+END
+nested.less
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/nested.less
+END
+keyframes.less
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/keyframes.less
+END
+attributes.less
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/attributes.less
+END
+accessors.less.disable
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/accessors.less.disable
+END
+compile_on_mixin.less
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/compile_on_mixin.less
+END
+math.less
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/math.less
+END
+hacks.less
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/hacks.less
+END
+builtins.less
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/builtins.less
+END
+misc.less
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/misc.less
+END
+site_demos.less
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/site_demos.less
+END
+scopes.less
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/scopes.less
+END
+mixin_merging.less.disable
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/mixin_merging.less.disable
+END
+escape.less
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/escape.less
+END
+colors.less
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/colors.less
+END
+out.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/out.html
+END
+font_family.less
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/font_family.less
+END
+mixins.less
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/mixins.less
+END
+variables.less
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/variables.less
+END

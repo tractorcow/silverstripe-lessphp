@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/test-imports
+END
+file1.less
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/test-imports/file1.less
+END
+file2.less
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repo/!svn/ver/2765/applications/website/wwwroot/trunk/silverstripe-lessphp/lessphp/tests/inputs/test-imports/file2.less
+END

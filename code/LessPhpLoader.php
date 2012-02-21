@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Injects hook required to ensure that less files are built when necessary
+ *
+ * @author Damo
+ */
+class LessPhpLoader extends Extension
+{
+
+    /**
+     * Performs automatic injection of LessPhp compilation
+     */
+    function onAfterInit()
+    {
+        if (Director::isDev() || isset($_GET['flush']))
+        {
+            $compiler = new LessPhp();
+            $compiler->CompileThemedCssFiles();
+        }
+    }
+
+}

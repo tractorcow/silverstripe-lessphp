@@ -2,6 +2,8 @@
 
 //
 // This module add lesscss capabilities to SilverStripe CMS.
+// 
+// Created by the brilliant https://github.com/openhoat and forked by https://github.com/tractorcow
 //
 // 		How it works : 
 //			- lessphp directory contains the "lessphp" project content (http://leafo.net/lessphp/#download)
@@ -10,11 +12,8 @@
 //
 //		How to use it on your SilverStripe site :
 //
-//			- add the following to your mysite/code/Page.php controller init function :
-//					if (Director::isDev() || isset($_GET['flush'])) {
-//						$lessCompiled = LessPhp::compileThemedCssFiles();
-//						if ($lessCompiled) SSViewer::flush_template_cache();
-//					}
+//			- Either do nothing and allow LessPhp to automatically build less files, or set 
+//              LessPhp::$auto_load = false and add your own code to determine when compilation
 //
 //			- create some .less files in lesscss sub-directory of your theme directory
 //				example : /wwwroot/themes/mytheme/lesscss/layout.less
@@ -26,3 +25,6 @@
 //						result example : /wwwroot/themes/mytheme/lesscss/layout.css
 //					the resulting css should be automatically loaded in SilverStripe (flush_template_cache())
 //
+
+if(LessPhp::$auto_load)
+    Object::add_extension ('Page_Controller', 'LessPhpLoader');

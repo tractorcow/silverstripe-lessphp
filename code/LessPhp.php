@@ -5,7 +5,7 @@ require_once(dirname(__FILE__) . '/../lessphp/lessc.inc.php');
 /**
  * Handles compliation of less files within the silverstripe theme directory
  * 
- * @author openhoat 
+ * @author Oliver Penhoat
  */
 class LessPhp
 {
@@ -18,7 +18,7 @@ class LessPhp
 
     /**
      * Flag indicating whether this module should also parse subthemes included under the current theme
-     * @var type 
+     * @var boolean 
      */
     public static $include_subthemes = true;
 
@@ -31,7 +31,7 @@ class LessPhp
 
     /**
      * Determines the theme names that should be considered
-     * @return type 
+     * @return array List of theme names to use 
      */
     protected function findThemes()
     {

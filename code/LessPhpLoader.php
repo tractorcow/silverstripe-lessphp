@@ -3,7 +3,7 @@
 /**
  * Injects hook required to ensure that less files are built when necessary
  *
- * @author Damo
+ * @author Damian Mooyman
  */
 class LessPhpLoader extends Extension
 {

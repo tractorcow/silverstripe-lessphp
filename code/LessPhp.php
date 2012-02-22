@@ -5,7 +5,7 @@ require_once(dirname(__FILE__) . '/../lessphp/lessc.inc.php');
 /**
  * Handles compliation of less files within the silverstripe theme directory
  * 
- * @author Oliver Penhoat
+ * @author Olivier Penhoat
  */
 class LessPhp
 {

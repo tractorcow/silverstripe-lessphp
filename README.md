@@ -11,7 +11,7 @@ This module is built on the [LessPhp](http://leafo.net/lessphp/) implementation 
 
 ## Credits and Authors
 
- * Oliver Penhoat - Author - <https://github.com/openhoat/silverstripe-lessphp>
+ * Olivier Penhoat - Author - <https://github.com/openhoat/silverstripe-lessphp>
  * Damian Mooyman - <https://github.com/tractorcow/silverstripe-lessphp>
 
 ## License

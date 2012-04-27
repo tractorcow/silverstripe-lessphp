@@ -11,14 +11,15 @@ class LessPhp {
 		$lessFiles = scandir($lessCssPath);
 		$updated = false;
 		foreach($lessFiles as $lessFilename) {
-			if (!preg_match("\.less", $lessFilename)) continue;
+			if (!preg_match("/\.less/", $lessFilename)) continue;
 			$pathParts = pathinfo($lessFilename);
 			$cssFilename = $pathParts['filename'].".css";
 			$lessFile = $lessCssPath."/".$lessFilename;
 			$cssFile = $cssPath."/".$cssFilename;
-/*            Debug::message("lessFile=$lessFile, cssFile=$cssFile");
+            
+//           Debug::message("lessFile=$lessFile, cssFile=$cssFile");
 
-			if (!is_file($cssFile) || filemtime($lessFile) > filemtime($cssFile)) {
+/*			if (!is_file($cssFile) || filemtime($lessFile) > filemtime($cssFile)) {
 				$less = new lessc($lessFile);
 				$less->importDir = $lessCssPath;
 				file_put_contents($cssFile, $less->parse());

@@ -6,17 +6,17 @@ class LessPhp {
 
 	public static function compileThemedCssFiles() {
 		$themePath = THEMES_PATH."/".SSViewer::current_theme();
-		$lessCssPath = $themePath."/lesscss";
+		$lessCssPath = $themePath."/less";
 		$cssPath = $themePath."/css";
 		$lessFiles = scandir($lessCssPath);
 		$updated = false;
 		foreach($lessFiles as $lessFilename) {
-			if (!eregi("\.less", $lessFilename)) continue;
+			if (!preg_match("\.less", $lessFilename)) continue;
 			$pathParts = pathinfo($lessFilename);
 			$cssFilename = $pathParts['filename'].".css";
 			$lessFile = $lessCssPath."/".$lessFilename;
 			$cssFile = $cssPath."/".$cssFilename;
-//Debug::message("lessFile=$lessFile, cssFile=$cssFile");
+            Debug::message("lessFile=$lessFile, cssFile=$cssFile");
 /*
 			if (!is_file($cssFile) || filemtime($lessFile) > filemtime($cssFile)) {
 				$less = new lessc($lessFile);

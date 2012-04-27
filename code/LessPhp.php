@@ -16,8 +16,8 @@ class LessPhp {
 			$cssFilename = $pathParts['filename'].".css";
 			$lessFile = $lessCssPath."/".$lessFilename;
 			$cssFile = $cssPath."/".$cssFilename;
-            Debug::message("lessFile=$lessFile, cssFile=$cssFile");
-/*
+/*            Debug::message("lessFile=$lessFile, cssFile=$cssFile");
+
 			if (!is_file($cssFile) || filemtime($lessFile) > filemtime($cssFile)) {
 				$less = new lessc($lessFile);
 				$less->importDir = $lessCssPath;

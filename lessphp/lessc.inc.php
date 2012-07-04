@@ -2010,8 +2010,8 @@ class lessc {
 
 	// compile to $in to $out if $in is newer than $out
 	// returns true when it compiles, false otherwise
-	public static function ccompile($in, $out) {
-		if (!is_file($out) || filemtime($in) > filemtime($out)) {
+	public static function ccompile($in, $out, $force = false) {
+		if (!is_file($out) || filemtime($in) > filemtime($out) || $force) {
 			$less = new lessc($in);
 			file_put_contents($out, $less->parse());
 			return true;

@@ -68,7 +68,7 @@ class LessPhp
             $lessFile = $lessCssPath . "/" . $lessFilename;
             $cssFile = $cssPath . "/" . $cssFilename;
 
-            $this->updated = lessc::ccompile($lessFile, $cssFile) || $this->updated;
+            $this->updated = lessc::ccompile($lessFile, $cssFile, true) || $this->updated;
         }
     }
 

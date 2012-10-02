@@ -5,7 +5,7 @@
 //
 // 		How it works : 
 //			- lessphp directory contains the "lessphp" project content (http://leafo.net/lessphp/#download)
-//			- feel free to update it by simply untar the content in your silverstripe-lessphp directory
+//			- feel free to update it by simply untar the content in your lessphp directory
 //			- code/LessPhp.php is a simple class with a static method that compiles less files to css ones
 //
 //		How to use it on your SilverStripe site :

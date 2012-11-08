@@ -3,7 +3,6 @@
     "description": "Silverstripe module to allow use of LessCss to programatically generate CSS",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "lesscss"],
-    "minimum-stability": "stable",
     "authors": [
         {
             "name": "Damian Mooyman",

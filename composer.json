@@ -1,5 +1,5 @@
 {
-    "name": "tractorcow/silverstripe-lessphp",
+    "name": "tractorcow/lessphp",
     "description": "Silverstripe module to allow use of LessCss to programatically generate CSS",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "lesscss"],

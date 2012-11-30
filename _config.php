@@ -25,6 +25,3 @@
 //						result example : /wwwroot/themes/mytheme/lesscss/layout.css
 //					the resulting css should be automatically loaded in SilverStripe (flush_template_cache())
 //
-
-if(LessPhp::$auto_load)
-    Object::add_extension ('Page_Controller', 'LessPhpLoader');

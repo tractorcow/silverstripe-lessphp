@@ -9,13 +9,6 @@ require_once(dirname(__FILE__) . '/../lessphp/lessc.inc.php');
  */
 class LessPhp
 {
-
-    /**
-     * Flag to indicate whether this module should attempt to automatically load itself
-     * @var boolean
-     */
-    public static $auto_load = true;
-
     /**
      * Flag indicating whether this module should also parse subthemes included under the current theme
      * @var boolean 

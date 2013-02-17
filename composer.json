@@ -1,5 +1,5 @@
 {
-    "name": "tractorcow/lessphp",
+    "name": "tractorcow/silverstripe-lessphp",
     "description": "Silverstripe module to allow use of LessCss to programatically generate CSS",
     "type": "silverstripe-module",
     "keywords": ["silverstripe", "lesscss"],
@@ -15,5 +15,8 @@
     "require": {
 	"silverstripe/framework": "3.*",
 	"composer/installers": "*"
+    },
+    "extra": {
+        "installer-name": "lessphp"
     }
 }

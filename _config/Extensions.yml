@@ -1,0 +1,6 @@
+---
+name: 'lessphpextensions'
+---
+Page_Controller:
+  extensions:
+    - 'LessPhpLoader'

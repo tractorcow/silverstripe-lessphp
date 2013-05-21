@@ -34,13 +34,13 @@ class LessPhp
 	 * The less folder name.
 	 * @var string
 	 */
-	public static $less_folder_path = "lesscss";
+	public static $less_folder_name = "lesscss";
 
 	/**
 	 * The css folder name.
 	 * @var string
 	 */
-	public static $css_folder_path = "css";
+	public static $css_folder_name  = "css";
 
 	/**
 	 * Determines the theme names that should be considered
@@ -64,8 +64,8 @@ class LessPhp
 	 */
 	protected function compileThemePath($themePath)
 	{
-		$lessCssPath = $themePath . "/" . LessPhp::$less_folder_path;
-		$cssPath = $themePath . "/" . LessPhp::$css_folder_path;
+		$lessCssPath = $themePath . "/" . LessPhp::$less_folder_name;
+		$cssPath = $themePath . "/" . LessPhp::$css_folder_name;
 
 		if (file_exists($lessCssPath))
 		{

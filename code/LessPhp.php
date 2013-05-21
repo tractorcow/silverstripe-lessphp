@@ -29,6 +29,19 @@ class LessPhp
 	 */
 	public static $extension_mask = "/\.less(\.css)?$/i";
 
+
+	/**
+	 * The less folder name.
+	 * @var string
+	 */
+	public static $less_folder_path = "lesscss";
+
+	/**
+	 * The css folder name.
+	 * @var string
+	 */
+	public static $css_folder_path = "css";
+
 	/**
 	 * Determines the theme names that should be considered
 	 * @return array List of theme names to use
@@ -51,24 +64,24 @@ class LessPhp
 	 */
 	protected function compileThemePath($themePath)
 	{
-		$lessCssPath = $themePath . "/lesscss";
-		$cssPath = $themePath . "/css";
+		$lessCssPath = $themePath . "/" . LessPhp::$less_folder_path;
+		$cssPath = $themePath . "/" . LessPhp::$css_folder_path;
 
-		// Ignore themes without a /lesscss folder
-		if (!file_exists($lessCssPath))
-			return;
-		$lessFiles = scandir($lessCssPath);
-		foreach ($lessFiles as $lessFilename)
+		if (file_exists($lessCssPath))
 		{
-			if (!preg_match(self::$extension_mask, $lessFilename))
-				continue;
+			$lessFiles = scandir($lessCssPath);
+			foreach ($lessFiles as $lessFilename)
+			{
+				if (!preg_match(self::$extension_mask, $lessFilename))
+					continue;
 
-			// Renames less files in the format layout.less.css or layout.less to layout.css
-			$cssFilename = preg_replace(self::$extension_mask, '.css', $lessFilename);
-			$lessFile = $lessCssPath . "/" . $lessFilename;
-			$cssFile = $cssPath . "/" . $cssFilename;
+				// Renames less files in the format layout.less.css or layout.less to layout.css
+				$cssFilename = preg_replace(self::$extension_mask, '.css', $lessFilename);
+				$lessFile = $lessCssPath . "/" . $lessFilename;
+				$cssFile = $cssPath . "/" . $cssFilename;
 
-			$this->updated = lessc::ccompile($lessFile, $cssFile, true) || $this->updated;
+				$this->updated = lessc::ccompile($lessFile, $cssFile) || $this->updated;
+			}
 		}
 	}
 

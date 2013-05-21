@@ -32,6 +32,13 @@ This module is built on the [LessPhp](http://leafo.net/lessphp/) implementation 
    environment if you intend to build scripts there).
  * To compile CSS files either run in development mode, or perform a manual flush with ?flush=all
 
+## Optional configures in your project/_config.php
+
+    LessPhp::$auto_load = false; // optional, default is true
+    LessPhp::$include_subthemes = false; // optional, default is true
+    LessPhp::$less_folder_name = "your-less-folder-name"; // optional, default is "lesscss"
+    LessPhp::$css_folder_name = "your-css-folder-name"; // optional, default is "css"
+
 ## Documentation
 
  * LESS API reference can be found at <http://lesscss.org/#docs>

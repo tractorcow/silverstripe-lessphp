@@ -7,7 +7,7 @@
 //
 // 		How it works : 
 //			- lessphp directory contains the "lessphp" project content (http://leafo.net/lessphp/#download)
-//			- feel free to update it by simply untar the content in your silverstripe-lessphp directory
+//			- feel free to update it by simply untar the content in your lessphp directory
 //			- code/LessPhp.php is a simple class with a static method that compiles less files to css ones
 //
 //		How to use it on your SilverStripe site :
@@ -25,3 +25,6 @@
 //						result example : /wwwroot/themes/mytheme/lesscss/layout.css
 //					the resulting css should be automatically loaded in SilverStripe (flush_template_cache())
 //
+
+if(LessPhp::$auto_load)
+    Object::add_extension ('Page_Controller', 'LessPhpLoader');

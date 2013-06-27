@@ -12,6 +12,9 @@
 			"name": "Olivier Penhoat"
 		}
 	],
+	"support": {
+		"issues": "https://github.com/tractorcow/silverstripe-lessphp/issues"
+	},
 	"require": {
 		"silverstripe/framework": "3.*",
 		"composer/installers": "*"

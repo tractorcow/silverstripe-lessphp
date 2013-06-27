@@ -14,18 +14,19 @@ This module is built on the [LessPhp](http://leafo.net/lessphp/) implementation 
  * Olivier Penhoat - Author - <https://github.com/openhoat/silverstripe-lessphp>
  * Damian Mooyman - <https://github.com/tractorcow/silverstripe-lessphp>
 
-## License
-
- * TODO
-
 ## Requirements
 
- * SilverStripe 2.4.5, may work on lower versions
- * PHP 5.2
+ * SilverStripe 3.0 or above
+ * PHP 5.3
 
 ## Installation Instructions
 
- * Extract all files into the 'lessphp' folder under your Silverstripe root.
+ * Extract all files into the 'lessphp' folder under your Silverstripe root, or install using composer
+
+```bash
+composer require "tractorcow/silverstripe-lessphp": "3.0.*@dev"
+```
+
  * Create a 'lesscss' directory within your themes folder (eg /themes/tractorcow/lesscss).
    This is where you should place all less scripts. Subthemes may have their own lesscss folders.
  * Make sure that your css folder has write access on your development environment (or on your staging
@@ -99,3 +100,33 @@ Will generate:
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
     }
+
+## License
+
+Copyright (c) 2013, Damian Mooyman, Olivier Penhoat
+All rights reserved.
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+ * Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+ * The name of Damian Mooyman and/or Olivier Penhoat may not be used to
+   endorse or promote products derived from this software without specific
+   prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

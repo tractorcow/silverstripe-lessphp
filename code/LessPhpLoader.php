@@ -11,13 +11,11 @@ class LessPhpLoader extends Extension
     /**
      * Performs automatic injection of LessPhp compilation
      */
-    function onAfterInit()
+    public function onAfterInit()
     {
-        if (Director::isDev() || isset($_GET['flush']))
-        {
+        if (Director::isDev() || isset($_GET['flush'])) {
             $compiler = new LessPhp();
             $compiler->CompileThemedCssFiles();
         }
     }
-
 }
